@@ -1,9 +1,8 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "workflows_alagr_name": {
-            "defaultValue": "alagr",
+        "logic_app_name": {
             "type": "String"
         }
     },
@@ -12,7 +11,7 @@
         {
             "type": "Microsoft.Logic/workflows",
             "apiVersion": "2017-07-01",
-            "name": "[parameters('workflows_alagr_name')]",
+            "name": "[parameters('logic_app_name')]",
             "location": "westus",
             "properties": {
                 "state": "Enabled",
