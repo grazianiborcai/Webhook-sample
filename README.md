@@ -1,4 +1,4 @@
-# Webhook-sample
+# Webhook template deploy
 
 With the following steps you will deploy a simple Logic Apps workflow to expose a webhook endpoint, which will response status 202 immediately and call the calback uri after 2 minutes.
 
